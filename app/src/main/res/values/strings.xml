@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UniversalInput</string>
+    <string name="button_clear">очистить</string>
+    <string name="button_ok">OK</string>
+    <string name="app_title">Имя пользавателя</string>
+    <string name="app_email">Электронная почта</string>
+</resources>
