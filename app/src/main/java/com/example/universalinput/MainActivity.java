@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
     private final View.OnClickListener clickClearListener = new View.OnClickListener() {
         @Override
-        public void onClick(View v) {
+        public void onClick(View v) {    //Удаляем все
 
             messageText.setText(null);
             nameEditText.setText(null);
