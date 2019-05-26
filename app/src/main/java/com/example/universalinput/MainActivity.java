@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
 
-            messageText.setText("Подписка на рассылку успешно оформлена для пользователя " + nameEditText.getText().toString() + " на электронный адрес " + emailEditText.getText().toString());
+            messageText.setText("Подписка на рассылку успешно оформлена для пользователя: " + nameEditText.getText().toString() + "\n На электронный адрес: " + emailEditText.getText().toString());
         }
     };
 
@@ -46,7 +46,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
 
-            messageText.setText("");
+            messageText.setText(null);
+            nameEditText.setText(null);
+            emailEditText.setText(null);
         }
     };
 }
