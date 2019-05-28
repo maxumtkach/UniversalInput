@@ -11,25 +11,24 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-
     private TextView messageText;
-    private EditText nameEditText;
-    private EditText emailEditText;
+      private EditText nameEditText;
+            private EditText emailEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+           setContentView(R.layout.activity_main);
 
         messageText = findViewById(R.id.text_message);
-        nameEditText = findViewById(R.id.editText_name);
-        emailEditText = findViewById(R.id.editText_email);
+           nameEditText = findViewById(R.id.editText_name);
+              emailEditText = findViewById(R.id.editText_email);
 
         Button clickOkButton = findViewById(R.id.button_ok);
-        clickOkButton.setOnClickListener(clickOkListener);
+                clickOkButton.setOnClickListener(clickOkListener);
 
         Button clickClearButton = findViewById(R.id.button_clear);
-        clickClearButton.setOnClickListener(clickClearListener);
+              clickClearButton.setOnClickListener(clickClearListener);
 
     }
 
@@ -38,7 +37,8 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
 
-            messageText.setText("Подписка на рассылку успешно оформлена для пользователя: " + nameEditText.getText().toString() + "\n На электронный адрес: " + emailEditText.getText().toString());
+
+            messageText.setText(getString(R.string.universal_input,nameEditText.getText().toString(),emailEditText.getText().toString()));
         }
     };
 
@@ -46,9 +46,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {    //Удаляем все
 
-            messageText.setText(null);
-            nameEditText.setText(null);
-            emailEditText.setText(null);
+            messageText.setText("");
+                nameEditText.getText().clear();
+                   emailEditText.getText().clear();
         }
     };
 }

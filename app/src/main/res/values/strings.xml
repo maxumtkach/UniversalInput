@@ -4,4 +4,6 @@
     <string name="button_ok">OK</string>
     <string name="app_title">Имя пользавателя</string>
     <string name="app_email">Электронная почта</string>
+    <string name="universal_input">Подписка на рассылку успешно оформлена для пользователя: %1$s На электронный адрес: %2$s</string>
+
 </resources>
