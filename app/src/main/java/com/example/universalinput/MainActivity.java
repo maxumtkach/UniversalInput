@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
            setContentView(R.layout.activity_main);
 
-        messageText = findViewById(R.id.text_message);
+        messageText = findViewById(R.id.text_message);    //инициализация
            nameEditText = findViewById(R.id.editText_name);
               emailEditText = findViewById(R.id.editText_email);
 
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
     private final View.OnClickListener clickClearListener = new View.OnClickListener() {
         @Override
-        public void onClick(View v) {    //Удаляем все
+        public void onClick(View v) {    //Очищаем все
 
             messageText.setText("");
                 nameEditText.getText().clear();
